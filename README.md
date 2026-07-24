@@ -1,9 +1,10 @@
 # AI Personal Content Waterfall
 
 > 🚧 **WORK IN PROGRESS — early scaffold, everything is subject to change.**
-> The app itself is **not built yet**. Treat file contents as drafts to build on, not
-> settled decisions. The one logged decision (`rag_decision.md`) is still **pending team
-> ratification**. Nothing here is final.
+> The app is an **adaptation of the team's existing MoveFlow pipeline**, not a from-scratch
+> build — a runnable **starter `app.py` + `generator.py`** is in place for Maria to own and
+> finish. Treat file contents as drafts to build on, not settled decisions. The one logged
+> decision (`rag_decision.md`) is still **pending team ratification**. Nothing here is final.
 
 An AI-powered content generator: turn a single source document into platform-specific posts
 (blog, LinkedIn, Instagram) while preserving a chosen communication style. Gradio + OpenAI,
@@ -18,7 +19,7 @@ built as a 2-day bootcamp MVP.
 | Profile loader (`profile_loader.py`) | Working, smoke-tested | Ugo |
 | Communication profiles (`knowledge_base/profiles/`) | 6 draft profiles | Ugo |
 | Document ingestion (`document_reader.py`) | Reused from prior project | Ugo → Maria |
-| Gradio app (`app.py`), OpenAI wiring, `requirements.txt` | Not started | Maria |
+| Gradio app (`app.py`), `generator.py`, `requirements.txt` | **Starter scaffold in place** — adapt from MoveFlow; Maria to own & finish | Maria |
 | `agents.md` | Not started | Maria |
 | Project docs / presentation | Tracked elsewhere | Elza |
 
@@ -47,9 +48,16 @@ prompt  = build_prompt("linkedin", profile, source)   # platform: "blog" | "link
 # then: client.chat.completions.create(..., messages=[{"role": "user", "content": prompt}])
 ```
 
-Still to add on the app side: `requirements.txt` (gradio, openai, python-dotenv, pypdf,
-python-docx), `app.py`, and OpenAI wiring. Keep your API key in a local `.env` — it's already
-gitignored; never commit it.
+A runnable **starter** is already in place — `app.py` (Gradio UI) + `generator.py` (OpenAI
+call) + `requirements.txt`, adapted from the MoveFlow pipeline and wired to `build_prompt` +
+`profile_loader`. It's yours to own and finish: refine the UI, tune the model/prompts, and
+confirm behaviour. To run it:
+
+```bash
+pip install -r requirements.txt
+# add OPENAI_API_KEY to a local .env  (already gitignored — never commit it)
+python app.py
+```
 
 **Elza (planning / docs / RAG decision).** `rag_decision.md` is the research write-up —
 please review so we can ratify the direct-injection call together. The fuller project README
@@ -66,5 +74,7 @@ a short branch per area (e.g. `app`, `docs`) with a quick PR is safest so we don
 ## Setup
 
 ```bash
-pip install -r requirements.txt   # once requirements.txt is added with the app
+pip install -r requirements.txt
+# add OPENAI_API_KEY to a local .env  (gitignored — never commit it)
+python app.py
 ```
