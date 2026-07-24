@@ -1,7 +1,7 @@
 # AI Personal Content Waterfall
 
 > 🚧 **WORK IN PROGRESS — early scaffold, everything is subject to change.**
-> The app is an **adaptation of the team's existing MoveFlow pipeline**, not a from-scratch
+> The app is an **adaptation of Maria and Elza's earlier MoveFlow project**, not a from-scratch
 > build — a runnable **starter `app.py` + `generator.py`** is in place for Maria to own and
 > finish. Treat file contents as drafts to build on, not settled decisions. The one logged
 > decision (`rag_decision.md`) is still **pending team ratification**. Nothing here is final.

@@ -1,7 +1,7 @@
 """
 AI Personal Content Waterfall — starter Gradio app.
 
-STARTER SCAFFOLD, adapted from the team's MoveFlow-Learning-Walk pipeline.
+STARTER SCAFFOLD, adapted from Maria and Elza's MoveFlow-Learning-Walk pipeline.
 App development is Maria's deliverable — this is a runnable base to take over and polish,
 not a finished app. It wires the existing building blocks together:
 

@@ -1,4 +1,4 @@
-# NOTE: Reuse candidate lifted from the team's prior project
+# NOTE: Reuse candidate lifted from Maria and Elza's earlier project
 # (eerele-art/MoveFlow-Learning-Walk). It already extracts text from PDF/DOCX/TXT
 # uploads and matches our stack (pypdf, python-docx). Kept here so Ugo's
 # knowledge-base-prep slice is self-contained and testable before the shared repo

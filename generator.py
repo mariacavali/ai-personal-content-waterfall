@@ -2,8 +2,8 @@
 OpenAI generation for AI Personal Content Waterfall.
 
 STARTER SCAFFOLD (app layer — Maria's deliverable). Combines the platform prompt from
-`prompts.build_prompt` with the OpenAI Chat Completions call, following the pattern from the
-team's MoveFlow-Learning-Walk `generator.py`.
+`prompts.build_prompt` with the OpenAI Chat Completions call, following the pattern from
+Maria and Elza's MoveFlow-Learning-Walk `generator.py`.
 
 The OpenAI client is created lazily so the UI can load without a key; generation then raises
 a clear message if OPENAI_API_KEY is missing.

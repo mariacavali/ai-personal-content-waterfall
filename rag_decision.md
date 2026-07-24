@@ -78,7 +78,7 @@ Rationale:
 4. **Quality is driven by prompting, not retrieval, here.** Preserving the author's voice
    depends on how well we structure the profile and platform-specific prompts — Ugo's
    prompt-engineering work — not on retrieval machinery.
-5. **It is already our proven pattern.** The team's prior project
+5. **It is a pattern the team has already shipped.** Maria and Elza's earlier project
    (`eerele-art/MoveFlow-Learning-Walk`) does document-to-content generation with exactly
    this approach: `document_reader.py` extracts the full text of an uploaded PDF/DOCX/TXT,
    and `generator.py` injects that whole text directly into the prompt (OpenAI, no
