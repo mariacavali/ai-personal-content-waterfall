@@ -17,7 +17,7 @@ built as a 2-day bootcamp MVP.
 | RAG research & decision (`rag_decision.md`) | Draft — **pending team ratification** | Ugo → team |
 | Prompt builders (`prompts.py`) | Working, smoke-tested | Ugo |
 | Profile loader (`profile_loader.py`) | Working, smoke-tested | Ugo |
-| Communication profiles (`knowledge_base/profiles/`) | 6 draft profiles | Ugo |
+| Communication profiles (`knowledge_base/profiles/`) | 7 draft profiles | Ugo |
 | Document ingestion (`document_reader.py`) | Reused from prior project | Ugo → Maria |
 | Gradio app (`app.py`), `generator.py`, `requirements.txt` | **Starter scaffold in place** — adapt from MoveFlow; Maria to own & finish | Maria |
 | `agents.md` | Not started | Maria |

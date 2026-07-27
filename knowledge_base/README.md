@@ -13,8 +13,9 @@ example content, and messaging priorities. Small, stable, and loaded from a loca
 
 - `communication_profile.md` — a fill-in **template** documenting the profile structure.
 - `profiles/` — a curated library of **ready-to-use representative profiles**
-  (founder, consultant, nonprofit, researcher, public affairs, populist political). The
-  populist profile is a generic *style* archetype, not a model of any real person. The user picks one at
+  (founder, consultant, nonprofit, researcher, public affairs, populist political, beauty &
+  lifestyle creator). The populist and beauty-creator profiles are generic *style* archetypes,
+  not models of any real person. The user picks one at
   runtime; only the selected profile is injected. Add more by dropping a new `.md` into
   `profiles/` — `../profile_loader.py` discovers it automatically (no code change). Started
   with 5 profiles by choice, not by limit.
